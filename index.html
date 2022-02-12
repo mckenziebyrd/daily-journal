@@ -12,13 +12,20 @@
     <main id="container">
         <h1 class="bigOleText">Big Ole Text</h1>
 
-        <fieldset class="inputFieldset">
+        <fieldset class="verticalFieldset">
             <label for="entryDate">Date</label>
             <input type="date" name="entryDate" id="entryDateInput" class="entryForm_date">
         </fieldset>
-        <fieldset class="inputFieldset">
+        <fieldset class="verticalFieldset">
             <label for="conceptsCovered">Concepts Covered</label>
             <input type="text" name="conceptsCovered" id="conceptsCoveredInput" class="entryForm_conceptsCovered">
+        </fieldset>
+        <fieldset>
+            <label for="moodSelect">Todays Mood: </label>
+            <select name="moodSelect" id="moodSelect">
+                <option>Happy</option>
+                <option>Sad</option>
+            </select>
         </fieldset>
     </main>
     <footer></footer>
