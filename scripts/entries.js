@@ -5,15 +5,18 @@
 */
 import { getJournalEntries } from "./database.js"
 
-export const Entries = () => {
-    const entries = ???
-    const allEntriesAsHTML = ""
+const entries = getJournalEntries()
+
+export const entries = () => {
+    // const entries = ???
+    const allEntriesAsHTML = "<ul>"
 
 
     for (const entry of entries) {
         allEntriesAsHTML += `
-           Replace this with your HTML representation of a journal entry
-        `
+        //    Replace this with your HTML representation of a journal entry
+            <li class="entryList--${entries}"></li>
+           `
     }
 
     return allEntriesAsHTML
